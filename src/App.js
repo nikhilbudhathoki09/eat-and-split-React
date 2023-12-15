@@ -21,6 +21,7 @@ const initialFriends = [
     balance: 0,
   },
 ];
+const crypto = require("crypto");
 
 function Button({ children, onClick }) {
   return (
