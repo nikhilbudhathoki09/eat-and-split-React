@@ -4,7 +4,7 @@ import { useState } from "react";
 const initialFriends = [
   {
     id: 118836,
-    name: "Clark",
+    name: "Nikhil",
     image: "https://i.pravatar.cc/48?u=118836",
     balance: -7,
   },
@@ -21,7 +21,6 @@ const initialFriends = [
     balance: 0,
   },
 ];
-const crypto = require("crypto");
 
 function Button({ children, onClick }) {
   return (
@@ -221,4 +220,12 @@ function FormSplitBill({ friend, onSplitBill }) {
       <Button>Split Bill</Button>
     </form>
   );
+}
+
+function crypto() {
+  return {
+    randomUUID() {
+      return Math.floor(Math.random() * 1000000);
+    },
+  };
 }
